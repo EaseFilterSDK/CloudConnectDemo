@@ -7,6 +7,9 @@ The Cloud storage tiering was implemented with tiered storage file system filter
 
 ![loudTier Storage Tiering Architecture](https://www.easefilter.com/images/CloudTiering.png)
 
+## Hierarchical storage management
+CloudTier Cloud Storage Connect is a data storage technique which automatically moves data between high-cost local disk and low-cost remote cloud storage. CloudTier Cloud Storage Connect can help simplify the migration process by providing the transparent file access from the remote storage. Using the cloud as a storage tier, data can first be moved to a ‘warm’ archive tier of higher-performance disk, where it can still be accessed quickly to meet RPO and RTO SLA’s. As you retain archives for longer, older data can then be moved to a ‘cold’ archive tier with better economics. (This is similar to the tiered storage cost/performance model offered by Amazon S3 with its “warm” Standard tier, “cold” Infrequent Access tier and “frozen” Glacier tier.)
+
 ## Integrate your exiting on-premises applications with remote cloud storage transparently                     
 Our CloudTier Cloud Storage Connect service can connect an on-premise software appliance with cloud-based storage to integrate your existing on-premises applications with the remote cloud storage infrastructure in a seamless, secure, and transparent fashion.There are no interruption to migrate your on-premise files to the remote cloud storage, don't need to change your existing applications and infrastructure.
 
@@ -15,16 +18,16 @@ Our CloudTier Cloud Storage Connect service can connect an on-premise software a
 3.	Transparent the cloud storage access by reading the stub file for your local application.
 4.	Transparent moving data back from remote cloud storage to the local, re-hydrate the stub file for the recent access file based on the policies.
 
-# Cloud Archiving Solution for Unstructured Data
+## Cloud archiving solution for unstructured data
 
 Cloud archiving is the process of moving data to secondary storage in the cloud, the potential benefits of cloud archiving include lower costs and easier access, no interruption and change to your existing applications and infrastructure. Automatically archive, manage and secure all your organization’s files to the cloud, transparently access your archived
 
 ![loudTier Storage Tiering Solution](https://www.easefilter.com/images/CloudTier.png)
 
-## CloudTier example is a simple C# Windows forms application, to demo how to use the transparent storage tiering SDK. 
+## CloudConnectDemo example is a simple C# Windows forms application, to demo how to connect the cloud storage as the second tier. 
 The example can generate some stub files. To handle the read request of the stub file, we need to register the callback function for the file system filter driver. When the stub file was accessed, the callback function will be invoked, the callback function will retrieve the data from the remote server and send back to the filter driver.
 
-## How to run the CloudTier demo?
+## How to run the CloudConnect demo?
 
 1.	Create the stub files first, go to tools->create stub test files.
 	By creating the stub file, you can move out your data to low-cost remote storage, 
@@ -40,5 +43,5 @@ The example can generate some stub files. To handle the read request of the stub
 
 5.	For demo purpose, the new stub file’s reparse point tag always pointing to the source file, you can change it to your remote sever, or in the cloud.
 
-[Read more about CloudTier SDK example](https://www.easefilter.com/Forums_Files/CloudTier.htm)
+[Read more about CloudConnect SDK](https://www.easefilter.com/Forums_Files/CloudStorageConnect.htm)
 
