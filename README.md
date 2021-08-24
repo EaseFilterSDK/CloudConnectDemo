@@ -2,10 +2,18 @@
 ## The challenges to connect the public cloud storage
 Enterprises are increasingly adopting cloud storage options because they need more capacity, elastic capacity and a better way to manage storage costs over time. The growing amount of enterprise data is proving too difficult for IT departments to manage using their data center alone. Migrating and managing your data storage in the cloud can offer significant value to the business. A cloud storage migration is when a company moves some or all of its local data into the cloud, usually to run on the cloud-based infrastructure provided by a cloud service provider such as AWS and Azure.The main challenge of the cloud storage migration here is how to carry out your migration with minimal disruption to normal operation, at the lowest cost, and over the shortest period of time. If your data becomes inaccessible to users during a migration, you risk impacting your business operations.The biggest challenge of the cloud storage migration for most small to medium size companies is the application redevelopment to adopt the cloud storage, most companies can't afford the expense. CloudTier Cloud Connect provides a complete solution to transparently connect to Amazon S3 storage and Azure storage. CloudTier uses the cloud storage as second tier, it can automatically to move data between local and the cloud, so your application doesn't need to do any change, it can access the cloud storage just like the local one transparently.
 
-Tiered Storage File System Filter Driver Technology
+## Cloud Storage Tiering File System Filter Driver Technology
 The Cloud storage tiering was implemented with tiered storage file system filter driver. A file system filter driver intercepts requests targeted at a file system or another file system filter driver. By intercepting the request before it reaches its intended target, the filter driver can extend or replace functionality provided by the original target of the request. File system filtering services are available through the filter manager in Windows. The CloudTier tiered storage filter driver can intercept the file I/O to the local storage and redirect it to the remote cloud storage by implementing the file system filtering functionalities which was provided by the Filter Manager framework.
 
 ![loudTier Storage Tiering Architecture](https://www.easefilter.com/images/CloudTiering.png)
+
+## Integrate your exiting on-premises applications with remote cloud storage transparently                     
+Our CloudTier Cloud Storage Connect service can connect an on-premise software appliance with cloud-based storage to integrate your existing on-premises applications with the remote cloud storage infrastructure in a seamless, secure, and transparent fashion.There are no interruption to migrate your on-premise files to the remote cloud storage, don't need to change your existing applications and infrastructure.
+
+1.	Set up file cloud migration policies based on the file type, file size, file attributes.
+2.	Create stub file based on the policies after the file was migrated to the cloud storage, it can free up the space from on-premise storage.
+3.	Transparent the cloud storage access by reading the stub file for your local application.
+4.	Transparent moving data back from remote cloud storage to the local, re-hydrate the stub file for the recent access file based on the policies.
 
 # Cloud Archiving Solution for Unstructured Data
 
