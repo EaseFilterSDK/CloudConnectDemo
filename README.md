@@ -1,8 +1,8 @@
-# [CloudConnect Demo Application](https://www.easefilter.com/Forums_Files/CloudStorageConnect.htm)
+# [CloudConnect SDK](https://www.easefilter.com/Forums_Files/CloudStorageConnect.htm)
 ## The challenges to connect the public cloud storage
 Enterprises are increasingly adopting cloud storage options because they need more capacity, elastic capacity and a better way to manage storage costs over time. The growing amount of enterprise data is proving too difficult for IT departments to manage using their data center alone. Migrating and managing your data storage in the cloud can offer significant value to the business. A cloud storage migration is when a company moves some or all of its local data into the cloud, usually to run on the cloud-based infrastructure provided by a cloud service provider such as AWS and Azure.The main challenge of the cloud storage migration here is how to carry out your migration with minimal disruption to normal operation, at the lowest cost, and over the shortest period of time. If your data becomes inaccessible to users during a migration, you risk impacting your business operations.The biggest challenge of the cloud storage migration for most small to medium size companies is the application redevelopment to adopt the cloud storage, most companies can't afford the expense. CloudTier Cloud Connect provides a complete solution to transparently connect to Amazon S3 storage and Azure storage. CloudTier uses the cloud storage as second tier, it can automatically to move data between local and the cloud, so your application doesn't need to do any change, it can access the cloud storage just like the local one transparently.
 
-## Cloud Storage Tiering File System Filter Driver Technology
+## Cloud Storage Tiering Technology
 The Cloud storage tiering was implemented with tiered storage file system filter driver. A file system filter driver intercepts requests targeted at a file system or another file system filter driver. By intercepting the request before it reaches its intended target, the filter driver can extend or replace functionality provided by the original target of the request. File system filtering services are available through the filter manager in Windows. The CloudTier tiered storage filter driver can intercept the file I/O to the local storage and redirect it to the remote cloud storage by implementing the file system filtering functionalities which was provided by the Filter Manager framework.
 
 ![loudTier Storage Tiering Architecture](https://www.easefilter.com/images/CloudTiering.png)
@@ -24,7 +24,7 @@ Cloud archiving is the process of moving data to secondary storage in the cloud,
 
 ![loudTier Storage Tiering Solution](https://www.easefilter.com/images/CloudTier.png)
 
-## CloudConnectDemo example is a simple C# Windows forms application, to demo how to connect the cloud storage as the second tier. 
+## CloudConnect example is a simple C# Windows forms application, to demo how to connect the cloud storage as the second tier. 
 The example can generate some stub files. To handle the read request of the stub file, we need to register the callback function for the file system filter driver. When the stub file was accessed, the callback function will be invoked, the callback function will retrieve the data from the remote server and send back to the filter driver.
 
 ## How to run the CloudConnect demo?
@@ -42,6 +42,32 @@ The example can generate some stub files. To handle the read request of the stub
 	all data will read from the source file by the demo application.
 
 5.	For demo purpose, the new stub file’s reparse point tag always pointing to the source file, you can change it to your remote sever, or in the cloud.
+
+## Connect Amazon S3 storage as second storage tier
+
+1.	Make sure you have a S3 key pair. You will need both the access key ID and the secret access key in order to continue. You can get them from the S3 console website.
+2.	Select Amazon_S3 cloud provider name. Click "Add Site" button to create a new site for the amazon s3 connection.
+3.	Put your site name and then enter your access key id and secret access key in the text boxes, choose the region in your setting.
+4.	Check the enable upload multiple parts box if you want to use parallel upload tasks for a file.
+5.	Check the enable parallel download box if you want to use parallel download tasks for a file.
+6.	Set the number of the parallel tasks for upload or download.
+7.	After filled in all the data, click apply to save the settings.
+8.	Click test connection to check if your setting is correct.
+
+![Amazon S3 settings](https://www.easefilter.com/images/AmazonS3Settings.PNG)
+
+## Connect Microsoft Azure Storage as second storage tier
+
+1.	Get your connection string  from the Microsoft Azure Dashboard Portal site, by clicking on the link to the Dashboard website.
+2.	Select AzureStorage cloud provider name. Click "Add Site" button to create a new site for the Azure storage connection.
+3.	Put your site name and then enter your connection string in the text box.
+4.	Check the enable upload multiple blobs box if you want to use parallel upload tasks for a file.
+5.	Check the enable parallel download box if you want to use parallel download tasks for a file.
+6.	Set the number of the parallel tasks for upload or download.
+7.	After filled in all the data, click apply to save the settings.
+8.	Click test connection to check if your setting is correct.
+
+![Azure settings](https://www.easefilter.com/images/AzureSettings.PNG)
 
 [Read more about CloudConnect SDK](https://www.easefilter.com/Forums_Files/CloudStorageConnect.htm)
 
