@@ -43,7 +43,7 @@ The example can generate some stub files. To handle the read request of the stub
 
 5.	For demo purpose, the new stub file’s reparse point tag always pointing to the source file, you can change it to your remote sever, or in the cloud.
 
-## Connect Amazon S3 storage as second storage tier
+## Connect Amazon S3 storage as second tier storage
 
 1.	Make sure you have a S3 key pair. You will need both the access key ID and the secret access key in order to continue. You can get them from the S3 console website.
 2.	Select Amazon_S3 cloud provider name. Click "Add Site" button to create a new site for the amazon s3 connection.
@@ -56,7 +56,7 @@ The example can generate some stub files. To handle the read request of the stub
 
 ![Amazon S3 settings](https://www.easefilter.com/images/AmazonS3Settings.PNG)
 
-## Connect Microsoft Azure Storage as second storage tier
+## Connect Microsoft Azure Storage as second tier storage
 
 1.	Get your connection string  from the Microsoft Azure Dashboard Portal site, by clicking on the link to the Dashboard website.
 2.	Select AzureStorage cloud provider name. Click "Add Site" button to create a new site for the Azure storage connection.
