@@ -1,7 +1,0 @@
-L:\github\CloudTierDemo\Demo_Source_Code\CloudConnectDemo\src\CloudConnectDemo\GlobalObjects\bin\release\GlobalObjects.dll.config
-L:\github\CloudTierDemo\Demo_Source_Code\CloudConnectDemo\src\CloudConnectDemo\GlobalObjects\bin\release\GlobalObjects.dll
-L:\github\CloudTierDemo\Demo_Source_Code\CloudConnectDemo\src\CloudConnectDemo\GlobalObjects\bin\release\GlobalObjects.pdb
-L:\github\CloudTierDemo\Demo_Source_Code\CloudConnectDemo\src\CloudConnectDemo\GlobalObjects\obj\Release\EaseFilter.GlobalObjects.EventForm.resources
-L:\github\CloudTierDemo\Demo_Source_Code\CloudConnectDemo\src\CloudConnectDemo\GlobalObjects\obj\Release\GlobalObjects.csproj.GenerateResource.Cache
-L:\github\CloudTierDemo\Demo_Source_Code\CloudConnectDemo\src\CloudConnectDemo\GlobalObjects\obj\Release\GlobalObjects.dll
-L:\github\CloudTierDemo\Demo_Source_Code\CloudConnectDemo\src\CloudConnectDemo\GlobalObjects\obj\Release\GlobalObjects.pdb
